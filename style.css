@@ -26,11 +26,11 @@ html {
 
 grid {
   position: relative;
-  display: grid;
+  display: flex;
   height: 500%;
 }
 
-gtid-wrapper {
+grid-wrapper {
   position: sticky;
   top: 0;
   left: 0;
@@ -68,6 +68,39 @@ grid-item {
   overflow: hidden;
   border-radius: 1rem;
 }
+
+.-a {
+  grid-area: a;
+}
+
+.-b {
+  grid-area: b;
+}
+
+.-c {
+  grid-area: c;
+}
+
+.-d {
+  grid-area: d;
+}
+
+.-e {
+  grid-area: e;
+}
+
+.-f {
+  grid-area: f;
+}
+
+.-g {
+  grid-area: g;
+}
+
+.-h {
+  grid-area: h;
+}
+
 video {
   height: 100%;
   width: 100%;
