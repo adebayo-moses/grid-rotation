@@ -20,17 +20,23 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  min-height: 100%;
+  height: auto;
 }
 
-grid {
+html {
+  scroll-behavior: initial;
+}
+
+.grid {
   position: relative;
   display: flex;
-  height: 500%;
+  height: 500vh;
 }
 
-grid-wrapper {
+.grid-wrapper {
   position: sticky;
   top: 0;
   left: 0;
@@ -42,7 +48,7 @@ grid-wrapper {
   overflow: hidden;
 }
 
-grid-inner {
+.grid-inner {
   display: grid;
   grid-template-areas:
     ". a a a a . . . ."
@@ -63,7 +69,7 @@ grid-inner {
   transform-origin: 50% 45%;
 }
 
-grid-item {
+.grid-item {
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
